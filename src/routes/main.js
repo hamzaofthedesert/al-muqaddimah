@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 // // New route for generating the calendar
 router.get('/calendar', (req, res) => {
-    const startDate = new Date('2024-07-02');
+    const startDate = new Date('2024-07-04');
     const endDate = new Date('2024-08-22');
     const calendar = generateCalendar(startDate, endDate);
     res.json(calendar); 
